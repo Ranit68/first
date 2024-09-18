@@ -52,31 +52,31 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-4 items-center">
             <a
               href="#"
-              className="text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+              className="text-white hover:text-blue-600 flex items-center space-x-1"
             >
               <FaTasks />
               <span>Manage</span>
             </a>
-            <a href="#" className="text-gray-800 hover:text-blue-600">
+            <a href="#" className="text-white hover:text-blue-600">
               Browse
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+              className="text-white hover:text-blue-600 flex items-center space-x-1"
             >
               <FaUsers />
               <span>Groups</span>
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+              className="text-white hover:text-blue-600 flex items-center space-x-1"
             >
               <FaBell />
               <span>Notifications</span>
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+              className="text-white hover:text-blue-600 flex items-center space-x-1"
             >
               <FaEnvelope />
               <span>Messaging</span>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 ref={userProfileRef}
               />
-              <div className="flex flex-col text-gray-800">
+              <div className="flex flex-col text-white">
                 <span className="text-sm">{userName}</span>
                 <span className="text-xs text-gray-600">{userBalance}</span>
               </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="container mx-auto px-4 py-2">
-          <p className="text-sm text-gray-700 font-bold mb-2">
+          <p className="text-sm text-white font-bold mb-2">
             {getSearchPlaceholder()}
           </p>
           <div className="relative">
@@ -109,10 +109,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex justify-center border-t border-gray-200 pt-4">
+        <div className="flex text-white justify-center border-t border-gray-200 pt-4">
           <Link
             to="/projects"
-            className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+            className={`px-4 py-2 text-white-800 hover:text-blue-600 font-semibold ${
               location.pathname === "/projects" ? "border-b-4 border-white" : ""
             }`}
           >
@@ -120,7 +120,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/freelancer"
-            className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+            className={`px-4 py-2 text-white hover:text-blue-600 font-semibold ${
               location.pathname === "/freelancer"
                 ? "border-b-4 border-white"
                 : ""
@@ -130,7 +130,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/contest"
-            className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+            className={`px-4 py-2 text-white hover:text-blue-600 font-semibold ${
               location.pathname === "/contest" ? "border-b-4 border-white" : ""
             }`}
           >
@@ -138,7 +138,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/list"
-            className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+            className={`px-4 py-2 text-white hover:text-blue-600 font-semibold ${
               location.pathname === "/list" ? "border-b-4 border-white" : ""
             }`}
           >
@@ -146,7 +146,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/myproject"
-            className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+            className={`px-4 py-2 text-white hover:text-blue-600 font-semibold ${
               location.pathname === "/myproject"
                 ? "border-b-4 border-white"
                 : ""
@@ -176,7 +176,7 @@ const Navbar = () => {
                 to="/projects"
                 className={`py-2 px-4 font-semibold ${
                   location.pathname === "/projects"
-                    ? "text-gray-800 border-b-4 border-white"
+                    ? "text-white border-b-4 border-white"
                     : "text-gray-700"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
@@ -187,7 +187,7 @@ const Navbar = () => {
                 to="/freelancer"
                 className={`py-2 px-4 font-semibold ${
                   location.pathname === "/freelancer"
-                    ? "text-gray-800 border-b-4 border-white"
+                    ? "text-white border-b-4 border-white"
                     : "text-gray-700"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
@@ -198,7 +198,7 @@ const Navbar = () => {
                 to="/contest"
                 className={`py-2 px-4 font-semibold ${
                   location.pathname === "/contest"
-                    ? "text-gray-800 border-b-4 border-white"
+                    ? "text-white border-b-4 border-white"
                     : "text-gray-700"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
@@ -209,7 +209,7 @@ const Navbar = () => {
                 to="/list"
                 className={`py-2 px-4 font-semibold ${
                   location.pathname === "/list"
-                    ? "text-gray-800 border-b-4 border-white"
+                    ? "text-white border-b-4 border-white"
                     : "text-gray-700"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
@@ -218,7 +218,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/myproject"
-                className={`px-4 py-2 text-gray-800 hover:text-blue-600 font-semibold ${
+                className={`px-4 py-2 text-white hover:text-blue-600 font-semibold ${
                   location.pathname === "/myproject"
                     ? "border-b-4 border-white"
                     : ""
@@ -228,34 +228,34 @@ const Navbar = () => {
               </Link>
               <a
                 href="#"
-                className="py-2 px-4 text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+                className="py-2 px-4 text-white hover:text-blue-600 flex items-center space-x-1"
               >
                 <FaTasks />
                 <span>Manage</span>
               </a>
               <a
                 href="#"
-                className="py-2 px-4 text-gray-800 hover:text-blue-600"
+                className="py-2 px-4 text-white hover:text-blue-600"
               >
                 Browse
               </a>
               <a
                 href="#"
-                className="py-2 px-4 text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+                className="py-2 px-4 text-white hover:text-blue-600 flex items-center space-x-1"
               >
                 <FaUsers />
                 <span>Groups</span>
               </a>
               <a
                 href="#"
-                className="py-2 px-4 text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+                className="py-2 px-4 text-white hover:text-blue-600 flex items-center space-x-1"
               >
                 <FaBell />
                 <span>Notifications</span>
               </a>
               <a
                 href="#"
-                className="py-2 px-4 text-gray-800 hover:text-blue-600 flex items-center space-x-1"
+                className="py-2 px-4 text-white hover:text-blue-600 flex items-center space-x-1"
               >
                 <FaEnvelope />
                 <span>Messaging</span>
